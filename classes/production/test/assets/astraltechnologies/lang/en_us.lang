@@ -1,0 +1,47 @@
+itemGroup.astraltechnologies=Astral Technologies
+
+item.ingotastralium.name=Astralium Ingot
+item.ingotlunarium.name=Lunarium Ingot
+item.ingotpyrium.name=Pyrium Ingot
+item.ingotsolarium.name=Solarium Ingot
+item.ingotvoidium.name=Voidium Ingot
+
+block.blockastralium.name=Astralium Block
+block.blocklunarium.name=Lunarium Block
+block.blockpyrium.name=Pyrium Block
+block.blocksolarium.name=Solarium Block
+block.blockvoidium.name=Voidium Block
+
+block.oreastralium.name=Astralium Ore
+block.orelunarium.name=Lunarium Ore
+block.orepyrium.name=Pyrium Ore
+block.oresolarium.name=Solarium Ore
+block.orevoidium.name=Voidium Ore
+
+tile.blockastraliumcluster.name=Astralium Energy Cluster
+tile.blocklunariumcluster.name=Lunarium Energy Cluster
+tile.blocksolariumcluster.name=Solarium Energy Cluser
+tile.blockvoidiumcluster.name=Voidium Energy Cluster
+
+tile.blockastralpanelbasic.name=Basic Astral Panel
+tile.blockastralpaneladvanced.name=Advanced Astral Panel
+tile.blockastralpanelelite.name=Elite Astral Panel
+
+tile.blocksolarpanelbasic.name=Basic Solar Panel
+tile.blocksolarpaneladvanced.name=Advanced Solar Panel
+tile.blocksolarpanelelite.name=Elite Solar Panel
+
+tile.blockculinarygenerator.name=Culinary Generator
+tile.blockendgenerator.name=Ender Generator
+tile.blockfuelgenerator.name=Furnace Generator
+tile.blocknethergenerator.name=Nether Generator
+
+gui.generator.info.storage_full=Storage Buffer Full
+gui.generator.info.rft=RF/t
+gui.generator.info.rf=RF
+gui.generator.info.seconds=s
+
+update.ready=There is an update for %s available!
+update.version=Current Version: %s, newest Version: %s
+update.download=Click To Download
+update.changelog=Hover to show change log

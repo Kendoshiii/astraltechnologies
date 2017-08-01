@@ -1,0 +1,60 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "http://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "1.0"
+group = "de.kendoshiii.astraltechnologies" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "astraltechnologies"
+
+sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
+
+minecraft {
+    version = "1.12-14.21.1.2420"
+    runDir = "run"
+    mappings = "snapshot_20170624"
+
+}
+
+repositories {
+    maven {
+        name = "CoFH Maven"
+        url = "http://maven.covers1624.net"
+    }
+    maven { //IC2
+        name = "ic2"
+        url = "http://maven.ic2.player.to/"
+    }
+}
+
+dependencies {
+
+    deobfCompile "cofh:RedstoneFlux:1.12-2.0.1.2:universal"
+    deobfCompile 'net.industrial-craft:industrialcraft-2:2.8.9-ex112'
+
+}
+
+processResources {
+
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
