@@ -1,10 +1,13 @@
 package de.kendoshiii.astraltechnologies.client.gui;
 
 import de.kendoshiii.astraltechnologies.common.container.ContainerCrafter;
+import de.kendoshiii.astraltechnologies.common.lib.Reference;
+import de.kendoshiii.astraltechnologies.common.util.StringUtils;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.translation.I18n;
 
 public class GuiCrafter extends GuiContainer{
 
@@ -19,7 +22,7 @@ public class GuiCrafter extends GuiContainer{
 
     @Override
     public void drawGuiContainerForegroundLayer(int x, int y){
-        //StringUtils.drawString(this.fontRenderer, this.xSize, -10, I18n.translateToLocal("container." + Reference.MODID + ".crafting.name"));
+        StringUtils.drawString(this.fontRenderer, this.xSize, -10, I18n.translateToLocal("container." + Reference.MODID + ".crafting.name"));
     }
 
     @Override
